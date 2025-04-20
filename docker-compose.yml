@@ -25,6 +25,7 @@ services:
       - GF_AUTH_GENERIC_OAUTH_ALLOW_ASSIGN_GRAFANA_ADMIN=${AUTH_GENERIC_OAUTH_ALLOW_ASSIGN_GRAFANA_ADMIN}
     volumes:
       - data:/var/lib/grafana
+    restart: always
 
 volumes:
   data:
